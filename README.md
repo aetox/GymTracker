@@ -1,27 +1,48 @@
-# GymTracker
+# Gymtracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+## Description
 
-## Development server
+Gymtracker est une application Web conçue pour les passionnés de musculation. Cette application offre une multitude de fonctionnalités utiles pour gérer et suivre vos séances d'entraînement. Avec Gymtracker, vous pouvez:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Créer et planifier vos séances d'entraînement.
+- Suivre vos séances à l'aide d'un calendrier interactif.
+- Garder une trace de vos progrès, en vous rappelant le poids que vous avez utilisé lors de votre dernière séance.
+- Et beaucoup plus...
 
-## Code scaffolding
+Gymtracker est construit avec le framework Angular et respecte les meilleures pratiques de développement pour offrir une expérience utilisateur exceptionnelle.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+Assurez-vous d'avoir installé Node.js et npm sur votre machine avant de continuer. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clonez ce dépôt sur votre machine locale en utilisant `git clone https://github.com/aetox/gymtracker.git`
 
-## Running unit tests
+2. Allez dans le dossier du projet `cd gymtracker`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Installez les dépendances du projet avec `npm install`
 
-## Running end-to-end tests
+## Exécution du Projet
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Une fois les dépendances installées, vous pouvez lancer l'application avec `ng serve`
 
-## Further help
+2. Ouvrez votre navigateur et accédez à `http://localhost:4200/`. L'application sera automatiquement rechargée si vous modifiez l'un des fichiers source.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tests
+
+Pour lancer les tests unitaires via [Karma](https://karma-runner.github.io), exécutez `ng test`.
+
+Pour lancer les tests end-to-end via [Protractor](http://www.protractortest.org/), exécutez `ng e2e`.
+
+## Contribuer
+
+Nous accueillons toutes les contributions. Pour commencer:
+
+1. Forkez le dépôt
+2. Créez une nouvelle branche (`git checkout -b ma-branche`)
+3. Faites les modifications que vous souhaitez apporter
+4. Committez vos modifications (`git commit -am 'Add some feature'`)
+5. Poussez votre branche (`git push origin ma-branche`)
+6. Créez une nouvelle Pull Request
+
+Merci d'avance pour vos contributions!
+
