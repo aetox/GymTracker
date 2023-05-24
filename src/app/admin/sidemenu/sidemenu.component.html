@@ -1,17 +1,19 @@
 <nav class="sidemenu">
-    <p>SideMenu</p>
-    <a [routerLink]="['/']" >Retour accueil</a>
+    <p>GymTracker</p>
     <ul>
-        <li><a [routerLink]="['dashboard']">Dashboard</a></li>
-        <li>User</li>
-            <ul>
-                <li><a [routerLink]="['users']">Liste users</a></li>
-                <li><a [routerLink]="['users/add']">Ajouter</a></li>
-            </ul>
-        <li>Exercices</li>
-        <ul>
-            <li><a [routerLink]="['exercices']">Liste exercices</a></li>
-            <li><a [routerLink]="['exercices/add']">Ajouter </a></li>
-        </ul>
+        <form>
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" placeholder="Rechercher...">
+            </div>
+        </form>
+        <li><a [routerLink]="['dashboard']">
+            <span class="material-symbols-outlined">dashboard</span>Dashboard</a></li>
+        <li><a [routerLink]="['dashboard']"><span class="material-symbols-outlined">
+            person
+            </span>User</a></li>
+        <li><a [routerLink]="['exercices']"><span class="material-symbols-outlined">
+            fitness_center
+            </span>Exercices</a></li>
     </ul>
 </nav>

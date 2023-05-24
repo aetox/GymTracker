@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="form_container">
+    <form 
+    name="form"
+    #f="ngForm"
+
+    
+    (ngSubmit)="f.form.valid && onSubmit()" 
+    
+    >
+    <!--  (ngSubmit)="f.form.valid && onSubmit()"  Permet de verifier que tout les champs sot rempli donc valide-->
+        <div class="group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" [(ngModel)]="form.email" #email="ngModel" required>
+            <div class="login_info" *ngIf="email.errors && f.submitted">Veuillez saisir une adresse mail</div>
+        </div>
+        <div class="group">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" [(ngModel)]="form.password" #password="ngModel" required minlength="5">
+            
+            <div class="login_info" *ngIf="password.errors && f.submitted">
+                <div *ngIf="password.errors['required']">Veuillez renseignez votre mot de passe</div>
+                <div *ngIf="password.errors['minlength']">Votre mot de passe doit comporter au moins<strong> 5 caractères</strong></div>
+            </div>
+
+        </div>
+        <div class="group">
+            <button>Login</button>
+        </div>
+    </form>
+</div>

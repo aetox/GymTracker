@@ -1,3 +1,21 @@
 <header>
-    <h2>Header</h2>
-</header>
+    <div class="logo"><img src="/assets/logo.png" alt="logo"></div>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a [routerLink]="['dashboard']">Dashboard</a></li>
+        <a [routerLink]="['/']" >Accueil Public</a>
+      </ul>
+    </nav>
+    <div class="hamburger" (click)="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="mobile-nav" [ngStyle]="{'display': menuVisible ? 'flex' : 'none'}">
+      <ul>
+        <li><a [routerLink]="['dashboard']">Dashboard</a></li>
+        <a [routerLink]="['/']" >Accueil Public</a>
+      </ul>
+    </nav>
+  </header>
+  

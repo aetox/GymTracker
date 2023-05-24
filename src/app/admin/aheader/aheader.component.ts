@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AheaderComponent {
 
+  menuVisible = false;
+  toggleMenu() {
+    this.menuVisible = !this.menuVisible;
+  }
+
 }
