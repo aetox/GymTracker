@@ -1,1 +1,17 @@
-<p>sidemenu works!</p>
+<nav class="sidemenu">
+    <p>SideMenu</p>
+    <a [routerLink]="['/']" >Retour accueil</a>
+    <ul>
+        <li><a [routerLink]="['dashboard']">Dashboard</a></li>
+        <li>User</li>
+            <ul>
+                <li><a [routerLink]="['users']">Liste users</a></li>
+                <li><a [routerLink]="['users/add']">Ajouter</a></li>
+            </ul>
+        <li>Exercices</li>
+        <ul>
+            <li><a [routerLink]="['exercices']">Liste exercices</a></li>
+            <li><a [routerLink]="['exercices/add']">Ajouter </a></li>
+        </ul>
+    </ul>
+</nav>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-e-edit',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./e-edit.component.css']
 })
 export class EEditComponent {
+  
+  constructor(private activated: ActivatedRoute){
+    this.activated.params.subscribe(
+      (data) => {
+        console.log(data)
+      }
+    )
+  }
 
 }

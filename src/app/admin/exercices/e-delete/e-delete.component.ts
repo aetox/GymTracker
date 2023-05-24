@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-e-delete',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./e-delete.component.css']
 })
 export class EDeleteComponent {
-
+  
+  constructor(private activated: ActivatedRoute){
+    this.activated.params.subscribe(
+      (data) => {
+        console.log(data)
+      }
+    )
+  }
 }

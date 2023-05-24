@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     // /:id => Permet d'ajouter un lien dynamique avec comme param : id
-    path:'edit/:id',
+    path:'edit/:eid',
     component: EEditComponent
   },
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
     component: EAddComponent
   },
   {
-    path:'delete/:id',
+    path:'delete/:eid',
     component: EDeleteComponent
   }
 ];
